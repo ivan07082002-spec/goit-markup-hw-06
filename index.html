@@ -133,11 +133,16 @@
             <li class="team-item">
               <div class="team-image-wrapper">
                 <img
+                  srcset="
+                    ./images/img-team/img -3.png    1x,
+                    ./images/img-team/img@2x-3.jpg 2x
+                  "
                   class="team-image"
-                  src="./images/mark.jpg"
+                  src="./images/img-team/img -3.jpg"
                   alt="Mark Guerrero"
                   width="264"
                   height="260"
+                  loading="lazy"
                 />
               </div>
               <div class="team-card-content">
@@ -179,11 +184,16 @@
             <li class="team-item">
               <div class="team-image-wrapper">
                 <img
+                  srcset="
+                    ./images/img-team/img -2.jpg    1x,
+                    ./images/img-team/img@2x-2.jpg 2x
+                  "
                   class="team-image"
-                  src="./images/tom.jpg"
+                  src="./images/img-team/img -2.jpg"
                   alt="Tom Ford"
                   width="264"
                   height="260"
+                  loading="lazy"
                 />
               </div>
               <div class="team-card-content">
@@ -224,11 +234,16 @@
             <li class="team-item">
               <div class="team-image-wrapper">
                 <img
+                  srcset="
+                    ./images/img-team/img -1.jpg    1x,
+                    ./images/img-team/img@2x-1.jpg 2x
+                  "
                   class="team-image"
-                  src="./images/camila.jpg"
+                  src="./images/img-team/img -1.jpg"
                   alt="Camila Garcia"
                   width="264"
                   height="260"
+                  loading="lazy"
                 />
               </div>
               <div class="team-card-content">
@@ -270,11 +285,16 @@
             <li class="team-item">
               <div class="team-image-wrapper">
                 <img
+                  srcset="
+                    ./images/img-team/img .jpg    1x,
+                    ./images/img-team/img@2x.jpg 2x
+                  "
                   class="team-image"
-                  src="./images/daniel.jpg"
+                  src="./images/img-team/img .jpg"
                   alt="Daniel Wilson"
                   width="264"
                   height="260"
+                  loading="lazy"
                 />
               </div>
               <div class="team-card-content">
@@ -323,9 +343,14 @@
               <div class="portfolio-image-wrapper">
                 <div class="portfolio-thumb">
                   <img
+                    srcset="
+                      ./images/img-portfolio/img-5.jpg    1x,
+                      ./images/img-portfolio/img@2x-5.jpg 2x
+                    "
                     class="portfolio-image"
-                    src="./images/img-1.jpg"
+                    src="./images/img-portfolio/img-5.jpg"
                     alt="Banking"
+                    loading="lazy"
                   />
                   <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -343,9 +368,14 @@
               <div class="portfolio-image-wrapper">
                 <div class="portfolio-thumb">
                   <img
+                    srcset="
+                      ./images/img-portfolio/img-4.jpg    1x,
+                      ./images/img-portfolio/img@2x-4.jpg 2x
+                    "
                     class="portfolio-image"
-                    src="./images/img-2.jpg"
+                    src="./images/img-portfolio/img-4.jpg"
                     alt="Cashless"
+                    loading="lazy"
                   />
                   <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -363,9 +393,14 @@
               <div class="portfolio-image-wrapper">
                 <div class="portfolio-thumb">
                   <img
+                    srcset="
+                      ./images/img-portfolio/img-3.jpg    1x,
+                      ./images/img-portfolio/img@2x-3.jpg 2x
+                    "
                     class="portfolio-image"
-                    src="./images/img-3.jpg"
+                    src="./images/img-portfolio/img-3.jpg"
                     alt="Meditation"
+                    loading="lazy"
                   />
                   <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -383,9 +418,14 @@
               <div class="portfolio-image-wrapper">
                 <div class="portfolio-thumb">
                   <img
+                    srcset="
+                      ./images/img-portfolio/img-2.jpg    1x,
+                      ./images/img-portfolio/img@2x-2.jpg 2x
+                    "
                     class="portfolio-image"
-                    src="./images/img-4.jpg"
+                    src="./images/img-portfolio/img-2.jpg"
                     alt="Taxi"
+                    loading="lazy"
                   />
                   <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -403,9 +443,14 @@
               <div class="portfolio-image-wrapper">
                 <div class="portfolio-thumb">
                   <img
+                    srcset="
+                      ./images/img-portfolio/img-1.jpg    1x,
+                      ./images/img-portfolio/img@2x-1.jpg 2x
+                    "
                     class="portfolio-image"
-                    src="./images/img-5.jpg"
+                    src="./images/img-portfolio/img-1.jpg"
                     alt="Screen"
+                    loading="lazy"
                   />
                   <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -423,9 +468,14 @@
               <div class="portfolio-image-wrapper">
                 <div class="portfolio-thumb">
                   <img
+                    srcset="
+                      ./images/img-portfolio/img.jpg    1x,
+                      ./images/img-portfolio/img@2x.jpg 2x
+                    "
                     class="portfolio-image"
-                    src="./images/img-6.jpg"
+                    src="./images/img-portfolio/img.jpg"
                     alt="Online"
+                    loading="lazy"
                   />
                   <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -595,14 +645,16 @@
                 <use href="./images/icons.svg#icon-vector"></use>
               </svg>
             </span>
-            I accept the terms and conditions of the
-            <a class="feedback-link" href="#">Privacy Policy</a>
+            <div class="feedback-text-checkbox">
+              I accept the terms and conditions of the
+              <a class="feedback-link" href="#">Privacy Policy</a>
+            </div>
           </label>
           <button class="feedback-form-button" type="submit">Send</button>
         </form>
       </div>
     </div>
-    <div class="mobile-menu hidden">
+    <div class="mobile-menu">
       <button class="mobile-menu-button" type="button">
         <svg class="mobile-menu-icon" width="8" height="8">
           <use href="./images/icons.svg#icon-close"></use>
