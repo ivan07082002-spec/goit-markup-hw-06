@@ -245,7 +245,7 @@ img {
 }
 .solutions {
   padding: 72px 0;
-
+  max-width: 1440px;
   background-color: #2e2f42;
 
   background-image:
@@ -290,14 +290,14 @@ img {
 
     background-image:
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/solutions/people-office\ 1_desk@1x.jpg);
+      url(../images/solutions/people-office-1_desk@1x.jpg);
   }
 
   @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .solutions {
       background-image:
         linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/solutions/people-office\ 1_desk@2x.jpg);
+        url(../images/solutions/people-office-1_desk@2x.jpg);
     }
   }
 }
@@ -369,11 +369,11 @@ img {
 .advantages {
   background-color: #fff;
 }
-@media only screen and (min-width: 1158px) {
+/* @media only screen and (min-width: 1158px) {
   .advantages {
     padding-top: 98px;
   }
-}
+} */
 
 .features-list {
   display: flex;
