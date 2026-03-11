@@ -384,7 +384,8 @@ img {
 
 .features-item {
   width: 288px;
-  height: 120px;
+  min-height: 120px;
+  height: auto;
 }
 @media only screen and (min-width: 768px) {
   .features-item {
@@ -1328,6 +1329,7 @@ img {
 
 .mobile-menu-socials {
   display: flex;
+  justify-content: flex-start;
   gap: 40px;
 }
 .mobile-menu-container .mobile-menu-button {
