@@ -304,7 +304,7 @@ img {
 
 .title {
   width: 216px;
-
+  margin-bottom: 72px;
   margin-inline: auto;
 
   font-weight: 700;
@@ -316,6 +316,7 @@ img {
 }
 @media only screen and (min-width: 768px) {
   .title {
+    margin-bottom: 36px;
     width: 496px;
     height: 120px;
     font-size: 56px;
@@ -324,13 +325,14 @@ img {
 }
 @media only screen and (min-width: 1158px) {
   .title {
+    margin-bottom: 48px;
     font-size: 56px;
     line-height: 1.07;
   }
 }
 
 .button {
-  margin-top: 72px;
+  margin-top: 0;
 
   margin-inline: auto;
   display: flex;
@@ -350,16 +352,6 @@ img {
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media only screen and (min-width: 768px) {
-  .button {
-    margin-top: 38px;
-  }
-}
-@media only screen and (min-width: 1158px) {
-  .button {
-    margin-top: 48px;
-  }
-}
 
 .button:hover,
 .button:focus {
@@ -369,11 +361,6 @@ img {
 .advantages {
   background-color: #fff;
 }
-/* @media only screen and (min-width: 1158px) {
-  .advantages {
-    padding-top: 98px;
-  }
-} */
 
 .features-list {
   display: flex;
@@ -495,7 +482,7 @@ img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 72px;
+  margin-top: 0;
   gap: 72px;
 }
 
@@ -642,6 +629,11 @@ img {
 }
 
 .portfolio-item {
+  box-shadow:
+    0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
+
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -652,17 +644,17 @@ img {
 }
 @media only screen and (min-width: 1158px) {
   .portfolio-item {
+    box-shadow: none;
     width: calc((100% - 48px) / 3);
   }
-}
+  .portfolio-item:hover {
+    box-shadow:
+      0 2px 1px 0 rgba(46, 47, 66, 0.08),
+      0 1px 1px 0 rgba(46, 47, 66, 0.16),
+      0 1px 6px 0 rgba(46, 47, 66, 0.08);
 
-.portfolio-item:hover {
-  box-shadow:
-    0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16),
-    0 1px 6px 0 rgba(46, 47, 66, 0.08);
-
-  background-color: #fff;
+    background-color: #fff;
+  }
 }
 
 .portfolio-thumb {
@@ -892,6 +884,7 @@ img {
 @media only screen and (min-width: 768px) {
   .footer-input-wrapper {
     flex-direction: row;
+    gap: 24px;
   }
 }
 @media only screen and (min-width: 1158px) {
